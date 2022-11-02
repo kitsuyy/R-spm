@@ -11,10 +11,9 @@ import SpringAnimation
 class ViewController: UIViewController {
    
 
-    @IBOutlet var coreAnimationView: SpringView!
-    @IBOutlet var springButton: SpringButton!
+    @IBOutlet var animationView: SpringView!
+    @IBOutlet var startButton: SpringButton!
     
-    @IBOutlet var animationView: UIStackView!
     @IBOutlet var presentLabel: UILabel!
     @IBOutlet var curveLabel: UILabel!
     @IBOutlet var forceLabel: UILabel!
@@ -29,18 +28,17 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonChangeAnimationDidTapped(_ sender: SpringButton) {
+        animationView.animation = animation.animation
+        animationView.curve = animation.curve
+        animationView.delay = animation.delay
+        animationView.duration = animation.duration
+        animationView.force = animation.force
         
-        coreAnimationView.animation = animation.animation
-        coreAnimationView.curve = animation.curve
-        coreAnimationView.delay = animation.delay
-        coreAnimationView.duration = animation.duration
-        coreAnimationView.force = animation.force
-        
-        coreAnimationView.animate()
+        animationView.animate()
         
         animation = Animation.getAnimations()
         setupLabels()
-        springButton.setTitle("Run + \(animation.animation)", for: .normal)
+        startButton.setTitle("Run + \(animation.animation)", for: .normal)
     }
     
     private func setupLabels() {

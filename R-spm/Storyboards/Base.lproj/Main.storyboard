@@ -130,14 +130,13 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="animationView" destination="bwq-mT-BrU" id="945-DA-0w7"/>
-                        <outlet property="coreAnimationView" destination="l2u-LA-xGH" id="QmN-9d-R9C"/>
+                        <outlet property="animationView" destination="l2u-LA-xGH" id="QmN-9d-R9C"/>
                         <outlet property="curveLabel" destination="7Tw-VK-X2u" id="wba-NH-rlD"/>
                         <outlet property="delayLabel" destination="S48-E6-6X6" id="1es-Zr-Rkn"/>
                         <outlet property="durationLabel" destination="fk3-Ct-XOH" id="zbK-w3-lXS"/>
                         <outlet property="forceLabel" destination="Uyg-Jn-jy1" id="trf-xh-7yf"/>
                         <outlet property="presentLabel" destination="Pwb-bq-qfu" id="Vaa-Nr-bKm"/>
-                        <outlet property="springButton" destination="M6c-UQ-9Ey" id="T3n-P5-34A"/>
+                        <outlet property="startButton" destination="M6c-UQ-9Ey" id="T3n-P5-34A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
