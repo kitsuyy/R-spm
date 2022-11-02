@@ -111,7 +111,7 @@
                                 <rect key="frame" x="60" y="513.5" width="200" height="34.5"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button">
+                                <buttonConfiguration key="configuration" style="filled" title="Start">
                                     <color key="baseBackgroundColor" systemColor="systemTealColor"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -131,12 +131,11 @@
                     </view>
                     <connections>
                         <outlet property="animationView" destination="l2u-LA-xGH" id="QmN-9d-R9C"/>
-                        <outlet property="curveLabel" destination="7Tw-VK-X2u" id="wba-NH-rlD"/>
-                        <outlet property="delayLabel" destination="S48-E6-6X6" id="1es-Zr-Rkn"/>
-                        <outlet property="durationLabel" destination="fk3-Ct-XOH" id="zbK-w3-lXS"/>
-                        <outlet property="forceLabel" destination="Uyg-Jn-jy1" id="trf-xh-7yf"/>
-                        <outlet property="presentLabel" destination="Pwb-bq-qfu" id="Vaa-Nr-bKm"/>
-                        <outlet property="startButton" destination="M6c-UQ-9Ey" id="T3n-P5-34A"/>
+                        <outletCollection property="animationViewLabels" destination="Pwb-bq-qfu" collectionClass="NSMutableArray" id="0Xq-K5-2Kq"/>
+                        <outletCollection property="animationViewLabels" destination="7Tw-VK-X2u" collectionClass="NSMutableArray" id="5l3-z1-fMe"/>
+                        <outletCollection property="animationViewLabels" destination="Uyg-Jn-jy1" collectionClass="NSMutableArray" id="RhF-IC-5fK"/>
+                        <outletCollection property="animationViewLabels" destination="fk3-Ct-XOH" collectionClass="NSMutableArray" id="Tjr-8D-lhc"/>
+                        <outletCollection property="animationViewLabels" destination="S48-E6-6X6" collectionClass="NSMutableArray" id="FkJ-ft-EJv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

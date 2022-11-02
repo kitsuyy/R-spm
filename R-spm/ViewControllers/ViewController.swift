@@ -9,17 +9,9 @@ import UIKit
 import SpringAnimation
 
 class ViewController: UIViewController {
-   
-
+  
     @IBOutlet var animationView: SpringView!
-    
-    
-    @IBOutlet var presentLabel: UILabel!
-    @IBOutlet var curveLabel: UILabel!
-    @IBOutlet var forceLabel: UILabel!
-    @IBOutlet var durationLabel: UILabel!
-    @IBOutlet var delayLabel: UILabel!
-    
+    @IBOutlet var animationViewLabels: [UILabel]!
     private var animation = Animation.getAnimation()
     
     override func viewDidLoad() {
@@ -42,11 +34,11 @@ class ViewController: UIViewController {
     }
     
     private func setupLabels() {
-        presentLabel.text = animation.animation
-        curveLabel.text = animation.curve
-        forceLabel.text = String(format: "%.2f", animation.force)
-        durationLabel.text = String(format: "%.2f", animation.duration)
-        delayLabel.text = String(animation.delay)
+        animationViewLabels[0].text = animation.animation
+        animationViewLabels[1].text = animation.curve
+        animationViewLabels[2].text = String(format: "%.2f", animation.force)
+        animationViewLabels[3].text = String(format: "%.2f", animation.duration)
+        animationViewLabels[4].text = String(animation.delay)
     }
 }
 
