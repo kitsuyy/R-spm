@@ -12,7 +12,7 @@ class ViewController: UIViewController {
    
 
     @IBOutlet var animationView: SpringView!
-    @IBOutlet var startButton: SpringButton!
+    
     
     @IBOutlet var presentLabel: UILabel!
     @IBOutlet var curveLabel: UILabel!
@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet var durationLabel: UILabel!
     @IBOutlet var delayLabel: UILabel!
     
-    private var animation = Animation.getAnimations()
+    private var animation = Animation.getAnimation()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,9 +36,9 @@ class ViewController: UIViewController {
         
         animationView.animate()
         
-        animation = Animation.getAnimations()
+        animation = Animation.getAnimation()
         setupLabels()
-        startButton.setTitle("Run + \(animation.animation)", for: .normal)
+        sender.setTitle("Start + \(animation.animation)", for: .normal)
     }
     
     private func setupLabels() {

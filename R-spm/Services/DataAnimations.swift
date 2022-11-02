@@ -39,7 +39,7 @@ struct DataAnimation {
         "swing"
     ]
     
-    let cuvers = [
+    let curvers = [
         "easeOut",
         "easeInOut",
         "linear",

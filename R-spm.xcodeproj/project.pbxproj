@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A11DA492912849200CEF8B0 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A11DA482912849200CEF8B0 /* Animations.swift */; };
+		0A11DA492912849200CEF8B0 /* ModelAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A11DA482912849200CEF8B0 /* ModelAnimation.swift */; };
 		0AB78EE1291145060080D455 /* DataAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB78EE0291145060080D455 /* DataAnimations.swift */; };
 		0AF6D884291122CD001467B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF6D883291122CD001467B2 /* AppDelegate.swift */; };
 		0AF6D886291122CD001467B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF6D885291122CD001467B2 /* SceneDelegate.swift */; };
@@ -20,7 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0A11DA482912849200CEF8B0 /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
+		0A11DA482912849200CEF8B0 /* ModelAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelAnimation.swift; sourceTree = "<group>"; };
 		0AB78EE0291145060080D455 /* DataAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAnimations.swift; sourceTree = "<group>"; };
 		0AF6D880291122CD001467B2 /* R-spm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "R-spm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF6D883291122CD001467B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,20 +45,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A11DA4729127E6500CEF8B0 /* Model */ = {
+		0A11DA4729127E6500CEF8B0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0A11DA482912849200CEF8B0 /* Animations.swift */,
+				0A11DA482912849200CEF8B0 /* ModelAnimation.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		0A11DA4A291288AC00CEF8B0 /* Data */ = {
+		0A11DA4A291288AC00CEF8B0 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				0AB78EE0291145060080D455 /* DataAnimations.swift */,
 			);
-			path = Data;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		0AF6D877291122CD001467B2 = {
@@ -80,8 +80,8 @@
 		0AF6D882291122CD001467B2 /* R-spm */ = {
 			isa = PBXGroup;
 			children = (
-				0A11DA4A291288AC00CEF8B0 /* Data */,
-				0A11DA4729127E6500CEF8B0 /* Model */,
+				0A11DA4A291288AC00CEF8B0 /* Services */,
+				0A11DA4729127E6500CEF8B0 /* Models */,
 				0AF6D89B29112792001467B2 /* ViewControllers */,
 				0AF6D89A29112782001467B2 /* App */,
 				0AF6D89C2911279C001467B2 /* Storyboards */,
@@ -196,7 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AB78EE1291145060080D455 /* DataAnimations.swift in Sources */,
-				0A11DA492912849200CEF8B0 /* Animations.swift in Sources */,
+				0A11DA492912849200CEF8B0 /* ModelAnimation.swift in Sources */,
 				0AF6D8A029113148001467B2 /* Exstension + UIView.swift in Sources */,
 				0AF6D888291122CD001467B2 /* ViewController.swift in Sources */,
 				0AF6D884291122CD001467B2 /* AppDelegate.swift in Sources */,
