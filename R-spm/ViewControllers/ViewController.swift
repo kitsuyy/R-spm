@@ -28,17 +28,17 @@ class ViewController: UIViewController {
         
         animationView.animate()
         
-        animation = Animation.getAnimation()
         setupLabels()
+        animation = Animation.getAnimation()
         sender.setTitle("Start + \(animation.animation)", for: .normal)
     }
     
     private func setupLabels() {
         animationViewLabels[0].text = animation.animation
         animationViewLabels[1].text = animation.curve
-        animationViewLabels[2].text = String(format: "%.2f", animation.force)
-        animationViewLabels[3].text = String(format: "%.2f", animation.duration)
-        animationViewLabels[4].text = String(animation.delay)
+        animationViewLabels[2].text = animation.descriptionDuration
+        animationViewLabels[3].text = animation.descriptionForce
+        animationViewLabels[4].text = animation.descriptionDelay
     }
 }
 
